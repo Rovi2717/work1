@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Print hello
-        run: echo  ${{ variables.PEI }}
+        run: echo  $PEI
