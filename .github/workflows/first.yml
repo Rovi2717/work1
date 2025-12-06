@@ -1,0 +1,17 @@
+name: Simple Hello
+
+on:
+  push:          # run this workflow on every push
+    branches:
+      - main     # limit to pushes on 'main' branch
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print hello
+        run: echo "Hello from GitHub Actions!"
