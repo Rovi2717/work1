@@ -2,7 +2,7 @@ name: Deploy to EC2
 
 on:
   push:
-    branches: [ master ]          # or your target branch
+    branches: [ main ]          # or your target branch
 
 jobs:
   Deploy:
